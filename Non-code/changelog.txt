@@ -1,0 +1,60 @@
+VERSION 06 ----------------------------------------------
+
+Surrounding Tilespread
+Update order
+GLITCH ON TILE SPREAD
+optimizations
+
+VERSION 07 ----------------------------------------------
+
+Removed every tile check method
+For next update: Re-implement better:
+-----
+--O--
+-OXO-
+--O--
+-----new checksys
+
+VERSION 08 ----------------------------------------------
+
+Remade every tile check method
+Ludicrous optimizations!
+Fire levels implemented, for better visuals and realism
+Differences in spread capability per material
+Firewalls
+Scroll to change brush size
+Better TileDraw method
+More streamlined methods
+Updating core-based, not global
+3 main update cores:
+    updateQueue()
+    processQueue()
+    draw_grid()
++ pygame screenDraw update core
+
+PENDING: make the fire spread actually slower, not 
+just rarely spread but at the same speed
+
+VERSION 09 ----------------------------------------------
+
+Chunk-based updates, separating the workload in batches
+
+VERSION 10 ----------------------------------------------
+
+Code organization overhaul
+Chunks transformed into scan-lines
+Draw calls are now instance-based
+Removal of redundant randoms() and removal of ALL sqrt()
+UpdateQueue will not make reduntant updates anymore
+
+VERSION 11 ----------------------------------------------
+
+Fire can randomly get stronger, to simulate the longer
+duration of tree fires
+
+VERSION 12 ----------------------------------------------
+
+HEIGHTMAP hell yeah
+normalMapping on surface to give realistic shading
+Fires flow faster uphill 
+Fires flow slower downhill
